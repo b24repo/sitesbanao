@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SitesBanao - Professional Websites for Indian Businesses | Starting ₹4,999",
+  title: "SitesBanao - Professional Websites for Indian Businesses | Starting ₹9,999",
   description:
-    "SitesBanao builds professional, mobile-friendly websites for small businesses in India. Custom designs, 7-day delivery, starting at just ₹4,999. Serving Jaipur, Indore & all of India. 500+ businesses trust us.",
+    "SitesBanao builds professional, mobile-friendly websites for small businesses in India. Custom designs, 7-day delivery, starting at just ₹9,999. Serving Jaipur, Indore & all of India. 500+ businesses trust us.",
   keywords: [
     "website design India",
     "website design Jaipur",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     canonical: "https://sitesbanao.com",
   },
   openGraph: {
-    title: "SitesBanao - Professional Websites for Indian Businesses | ₹4,999",
+    title: "SitesBanao - Professional Websites for Indian Businesses | ₹9,999",
     description:
-      "Get a professional website for your business in 7 days. Custom designs, mobile-friendly, SEO-ready. Starting ₹4,999. Trusted by 500+ businesses across India.",
+      "Get a professional website for your business in 7 days. Custom designs, mobile-friendly, SEO-ready. Starting ₹9,999. Trusted by 500+ businesses across India.",
     url: "https://sitesbanao.com",
     siteName: "SitesBanao",
     type: "website",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SitesBanao - Professional Websites Starting ₹4,999",
+        alt: "SitesBanao - Professional Websites Starting ₹9,999",
       },
     ],
   },
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SitesBanao - Professional Websites for Indian Businesses",
     description:
-      "Custom websites for small businesses starting ₹4,999. 7-day delivery. Mobile-friendly. SEO-ready.",
+      "Custom websites for small businesses starting ₹9,999. 7-day delivery. Mobile-friendly. SEO-ready.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -104,7 +104,7 @@ const jsonLd = {
       name: "SitesBanao",
       url: "https://sitesbanao.com",
       description:
-        "SitesBanao is a website design agency serving small businesses across India. We build professional, mobile-friendly websites starting at ₹4,999 with 7-day delivery.",
+        "SitesBanao is a website design agency serving small businesses across India. We build professional, mobile-friendly websites starting at ₹9,999 with 7-day delivery.",
       foundingDate: "2025",
       areaServed: [
         {

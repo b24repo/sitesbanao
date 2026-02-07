@@ -2,7 +2,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "SitesBanao - Jaipur",
-  description: "Professional website design and development for businesses in Jaipur. Starting ₹4,999.",
+  description: "Professional website design and development for businesses in Jaipur. Starting ₹9,999.",
   url: "https://sitesbanao.com/jaipur",
   telephone: "+91-82099-04262",
   areaServed: { "@type": "City", name: "Jaipur", containedInPlace: { "@type": "State", name: "Rajasthan" } },

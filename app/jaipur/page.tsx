@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Website Design in Jaipur | Professional Websites Starting ₹4,999 | SitesBanao",
+  title: "Website Design in Jaipur | Professional Websites Starting ₹9,999 | SitesBanao",
   description:
-    "Get a professional website for your Jaipur business starting ₹4,999. We serve businesses in C-Scheme, Malviya Nagar, Vaishali Nagar, Mansarovar, Tonk Road. 7-day delivery, mobile-friendly, SEO-ready.",
+    "Get a professional website for your Jaipur business starting ₹9,999. We serve businesses in C-Scheme, Malviya Nagar, Vaishali Nagar, Mansarovar, Tonk Road. 7-day delivery, mobile-friendly, SEO-ready.",
   keywords:
     "website design Jaipur, web development Jaipur, affordable website Jaipur, business website Jaipur, Jaipur web designer, C-Scheme, Malviya Nagar, Vaishali Nagar, Mansarovar, Tonk Road, sitesbanao",
   alternates: { canonical: "https://sitesbanao.com/jaipur" },
   openGraph: {
-    title: "Website Design in Jaipur | Starting ₹4,999 | SitesBanao",
+    title: "Website Design in Jaipur | Starting ₹9,999 | SitesBanao",
     description:
       "Professional websites for Jaipur businesses. 7-day delivery. See our live demo sites!",
     url: "https://sitesbanao.com/jaipur",
@@ -54,7 +54,7 @@ export default function JaipurPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Website Design in Jaipur |<br />
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Professional Websites Starting ₹4,999
+              Professional Websites Starting ₹9,999
             </span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
