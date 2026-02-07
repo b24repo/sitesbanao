@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SitesBanao - Professional Websites Starting ₹4,999 | India",
+  title: "SitesBanao - Professional Websites Starting ₹9,999 | India",
   description: "Get a professional, mobile-friendly website for your business. Custom designs, fast delivery, affordable pricing. Proudly serving businesses across India.",
   keywords: "website design india, web development, business website, affordable website, sitesbanao",
   openGraph: {
-    title: "SitesBanao - Professional Websites Starting ₹4,999",
-    description: "Get a professional website for your business. Custom designs, 7-day delivery, starting ₹4,999.",
+    title: "SitesBanao - Professional Websites Starting ₹9,999",
+    description: "Get a professional website for your business. Custom designs, 7-day delivery, starting ₹9,999.",
     url: "https://sitesbanao.com",
     siteName: "SitesBanao",
     type: "website",
