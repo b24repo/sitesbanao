@@ -15,6 +15,8 @@ export default function Home() {
             <a href="#pricing" className="hover:text-blue-600 transition">Pricing</a>
             <a href="#portfolio" className="hover:text-blue-600 transition">Portfolio</a>
             <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
+            <a href="/jaipur" className="hover:text-blue-600 transition">Jaipur</a>
+            <a href="/indore" className="hover:text-blue-600 transition">Indore</a>
           </nav>
           <a
             href="https://wa.me/918209904262?text=Hi!%20I%20want%20to%20build%20a%20website"
@@ -29,7 +31,7 @@ export default function Home() {
       <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            🚀 Websites for Indore Businesses
+            🚀 Websites for Indian Businesses
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Professional Website<br />
@@ -79,7 +81,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Perfect for Local Businesses</h2>
-            <p className="text-gray-600">We specialize in websites for Indore&apos;s growing businesses</p>
+            <p className="text-gray-600">We specialize in websites for India&apos;s growing local businesses</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
@@ -287,21 +289,24 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { name: "Bake Affaire", type: "Café & Bakery", color: "from-amber-400 to-orange-500" },
-              { name: "Cakes & More", type: "Bakery", color: "from-pink-400 to-rose-500" },
-              { name: "Lotus Hut", type: "Café", color: "from-emerald-400 to-teal-500" },
+              { name: "Donor Aquarists", type: "Aquarium & Pet Store", url: "https://donoraquarists.sitesbanao.com", color: "from-blue-400 to-cyan-500" },
+              { name: "The Dogfather", type: "Pet Store", url: "https://thedogfather.sitesbanao.com", color: "from-amber-400 to-orange-500" },
+              { name: "Evershine Kerala", type: "Restaurant", url: "https://evershinekerala.sitesbanao.com", color: "from-emerald-400 to-teal-500" },
+              { name: "Shyam Darbaar", type: "Restaurant", url: "https://shyamdarbaar.sitesbanao.com", color: "from-purple-400 to-pink-500" },
+              { name: "Jharokha Restro", type: "Restaurant", url: "https://jharokharestro.sitesbanao.com", color: "from-red-400 to-rose-500" },
+              { name: "Bake Affaire", type: "Café & Bakery", url: "https://bake-affaire.vercel.app", color: "from-yellow-400 to-amber-500" },
             ].map((item, i) => (
-              <div key={i} className="group cursor-pointer">
-                <div className={`aspect-video bg-gradient-to-br ${item.color} rounded-2xl mb-4 flex items-center justify-center group-hover:shadow-xl transition`}>
+              <a key={i} href={item.url} target="_blank" rel="noopener noreferrer" className="group">
+                <div className={`aspect-video bg-gradient-to-br ${item.color} rounded-2xl mb-4 flex items-center justify-center group-hover:shadow-xl transition group-hover:scale-[1.02]`}>
                   <span className="text-white text-4xl font-bold opacity-50">{item.name[0]}</span>
                 </div>
-                <h3 className="font-bold text-gray-900">{item.name}</h3>
+                <h3 className="font-bold text-gray-900 group-hover:text-blue-600 transition">{item.name}</h3>
                 <p className="text-gray-500 text-sm">{item.type}</p>
-              </div>
+              </a>
             ))}
           </div>
           <p className="text-center text-gray-500 mt-8">
-            More examples coming soon! We&apos;re a new team with big ambitions 🚀
+            See more in your city: <a href="/jaipur" className="text-blue-600 hover:underline font-medium">Jaipur</a> | <a href="/indore" className="text-blue-600 hover:underline font-medium">Indore</a>
           </p>
         </div>
       </section>
@@ -346,7 +351,7 @@ export default function Home() {
             WhatsApp: +91 82099 04262
           </a>
           <p className="mt-6 text-blue-200">
-            📍 Based in Indore | Serving businesses across India
+            📍 Based in Indore &amp; Jaipur | Serving businesses across India
           </p>
         </div>
       </section>
@@ -354,7 +359,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-5 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
@@ -384,16 +389,23 @@ export default function Home() {
               </ul>
             </div>
             <div>
+              <h4 className="font-bold mb-4">Cities</h4>
+              <ul className="space-y-2 text-gray-400 text-sm">
+                <li><a href="/jaipur" className="hover:text-white transition">Jaipur</a></li>
+                <li><a href="/indore" className="hover:text-white transition">Indore</a></li>
+              </ul>
+            </div>
+            <div>
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>📱 +91 82099 04262</li>
-                <li>📍 Indore, MP</li>
+                <li>📍 Indore &amp; Jaipur</li>
                 <li>✉️ WhatsApp preferred</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-            © 2026 SitesBanao. Made with ❤️ in Indore, India
+            © 2026 SitesBanao. Made with ❤️ in Indore &amp; Jaipur, India
           </div>
         </div>
       </footer>
