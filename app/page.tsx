@@ -29,7 +29,7 @@ export default function Home() {
       <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            🚀 Websites for Indore Businesses
+            {'🚀 Websites for Indian Businesses'}
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Professional Website<br />
@@ -79,7 +79,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Perfect for Local Businesses</h2>
-            <p className="text-gray-600">We specialize in websites for Indore&apos;s growing businesses</p>
+            <p className="text-gray-600">We specialize in websites for India&apos;s growing businesses</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
@@ -346,7 +346,7 @@ export default function Home() {
             WhatsApp: +91 82099 04262
           </a>
           <p className="mt-6 text-blue-200">
-            📍 Based in Indore | Serving businesses across India
+            {'📍 Proudly serving businesses across India 🇮🇳'}
           </p>
         </div>
       </section>
@@ -387,13 +387,13 @@ export default function Home() {
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>📱 +91 82099 04262</li>
-                <li>📍 Indore, MP</li>
+                <li>📍 India</li>
                 <li>✉️ WhatsApp preferred</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-            © 2026 SitesBanao. Made with ❤️ in Indore, India
+            {'© 2026 SitesBanao. Made in India'} <span className="inline-block ml-1">🇮🇳</span>
           </div>
         </div>
       </footer>

@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SitesBanao - Professional Websites Starting ₹4,999 | Indore",
-  description: "Get a professional, mobile-friendly website for your business. Custom designs, fast delivery, affordable pricing. Based in Indore, serving all of India.",
-  keywords: "website design indore, web development, business website, affordable website, sitesbanao",
+  title: "SitesBanao - Professional Websites Starting ₹4,999 | India",
+  description: "Get a professional, mobile-friendly website for your business. Custom designs, fast delivery, affordable pricing. Proudly serving businesses across India.",
+  keywords: "website design india, web development, business website, affordable website, sitesbanao",
   openGraph: {
     title: "SitesBanao - Professional Websites Starting ₹4,999",
     description: "Get a professional website for your business. Custom designs, 7-day delivery, starting ₹4,999.",
