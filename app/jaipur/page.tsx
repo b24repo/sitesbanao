@@ -16,11 +16,12 @@ export const metadata: Metadata = {
 };
 
 const demoSites = [
-  { name: "Donor Aquarists", type: "Aquarium & Pet Store", url: "https://donoraquarists.sitesbanao.com", color: "from-blue-400 to-cyan-500" },
-  { name: "The Dogfather", type: "Pet Store", url: "https://thedogfather.sitesbanao.com", color: "from-amber-400 to-orange-500" },
-  { name: "Evershine Kerala", type: "Restaurant", url: "https://evershinekerala.sitesbanao.com", color: "from-emerald-400 to-teal-500" },
-  { name: "Shyam Darbaar", type: "Restaurant", url: "https://shyamdarbaar.sitesbanao.com", color: "from-purple-400 to-pink-500" },
-  { name: "Jharokha Restro", type: "Restaurant", url: "https://jharokharestro.sitesbanao.com", color: "from-red-400 to-rose-500" },
+  { name: "Donor Aquarists", type: "Aquarium & Pet Store", url: "https://donoraquarists.sitesbanao.com", img: "/portfolio/donor-aquarists.png", reviews: "4.5★ · 150+ reviews" },
+  { name: "The Dogfather", type: "Pet Store & Grooming", url: "https://thedogfather.sitesbanao.com", img: "/portfolio/the-dogfather.png", reviews: "4.6★ · 300+ reviews" },
+  { name: "Evershine Kerala", type: "Restaurant", url: "https://evershinekerala.sitesbanao.com", img: "/portfolio/evershine-kerala.png", reviews: "4.3★ · 500+ reviews" },
+  { name: "Shyam Darbaar", type: "Restaurant & Banquet", url: "https://shyamdarbaar.sitesbanao.com", img: "/portfolio/shyam-darbaar.png", reviews: "4.4★ · 400+ reviews" },
+  { name: "Jharokha Restro", type: "Restaurant", url: "https://jharokharestro.sitesbanao.com", img: "/portfolio/jharokha-restro.png", reviews: "4.2★ · 250+ reviews" },
+  { name: "Whisk & Knead Co", type: "Bakery & Café", url: "https://whiskandknead.sitesbanao.com", img: "/portfolio/whisk-and-knead.png", reviews: "New" },
 ];
 
 export default function JaipurPage() {
@@ -82,7 +83,7 @@ export default function JaipurPage() {
             </h2>
             <p className="text-gray-600">Click to visit — these are real, live websites</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             {demoSites.map((site, i) => (
               <a
                 key={i}
@@ -91,19 +92,28 @@ export default function JaipurPage() {
                 rel="noopener noreferrer"
                 className="group"
               >
-                <div
-                  className={`aspect-video bg-gradient-to-br ${site.color} rounded-2xl mb-4 flex items-center justify-center group-hover:shadow-xl transition group-hover:scale-[1.02]`}
-                >
-                  <span className="text-white text-4xl font-bold opacity-50">
-                    {site.name[0]}
-                  </span>
+                <div className="aspect-video rounded-2xl mb-4 overflow-hidden group-hover:shadow-xl transition group-hover:scale-[1.02]">
+                  <img
+                    src={site.img}
+                    alt={`${site.name} website`}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <h3 className="font-bold text-gray-900 group-hover:text-blue-600 transition">
                   {site.name}
                 </h3>
                 <p className="text-gray-500 text-sm">{site.type}</p>
+                <p className="text-yellow-600 text-xs mt-1">{site.reviews}</p>
               </a>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <a
+              href="https://wa.me/918209904262?text=Hi!%20I%20saw%20your%20Jaipur%20demos.%20I%20want%20a%20website%20for%20my%20business"
+              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-lg"
+            >
+              💬 Your business could be next — WhatsApp us!
+            </a>
           </div>
         </div>
       </section>
