@@ -158,7 +158,7 @@ export default function Home() {
             {/* Basic */}
             <div className="bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-blue-200 transition">
               <div className="text-sm font-semibold text-gray-500 mb-2">STARTER</div>
-              <div className="text-4xl font-bold text-gray-900 mb-1">₹4,999</div>
+              <div className="text-4xl font-bold text-gray-900 mb-1">₹9,999</div>
               <div className="text-gray-500 mb-6">one-time payment</div>
               <ul className="space-y-3 mb-8">
                 {[
@@ -176,7 +176,7 @@ export default function Home() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/918209904262?text=Hi!%20I%20want%20the%20Starter%20package%20(₹4,999)"
+                href="https://wa.me/918209904262?text=Hi!%20I%20want%20the%20Starter%20package%20(₹9,999)"
                 className="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-semibold text-center transition"
               >
                 Get Started
@@ -189,7 +189,7 @@ export default function Home() {
                 MOST POPULAR
               </div>
               <div className="text-sm font-semibold text-blue-200 mb-2">STANDARD</div>
-              <div className="text-4xl font-bold mb-1">₹9,999</div>
+              <div className="text-4xl font-bold mb-1">₹14,999</div>
               <div className="text-blue-200 mb-6">one-time payment</div>
               <ul className="space-y-3 mb-8">
                 {[
@@ -209,7 +209,7 @@ export default function Home() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/918209904262?text=Hi!%20I%20want%20the%20Standard%20package%20(₹9,999)"
+                href="https://wa.me/918209904262?text=Hi!%20I%20want%20the%20Standard%20package%20(₹14,999)"
                 className="block w-full bg-white text-blue-600 py-3 rounded-xl font-bold text-center hover:bg-blue-50 transition"
               >
                 Get Started
@@ -219,7 +219,7 @@ export default function Home() {
             {/* Pro */}
             <div className="bg-white rounded-3xl p-8 border-2 border-gray-100 hover:border-purple-200 transition">
               <div className="text-sm font-semibold text-gray-500 mb-2">PRO</div>
-              <div className="text-4xl font-bold text-gray-900 mb-1">₹19,999</div>
+              <div className="text-4xl font-bold text-gray-900 mb-1">₹24,999</div>
               <div className="text-gray-500 mb-6">one-time payment</div>
               <ul className="space-y-3 mb-8">
                 {[
@@ -240,7 +240,7 @@ export default function Home() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/918209904262?text=Hi!%20I%20want%20the%20Pro%20package%20(₹19,999)"
+                href="https://wa.me/918209904262?text=Hi!%20I%20want%20the%20Pro%20package%20(₹24,999)"
                 className="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 py-3 rounded-xl font-semibold text-center transition"
               >
                 Get Started
@@ -409,9 +409,9 @@ export default function Home() {
             <div>
               <h4 className="font-bold mb-4">Pricing</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li>Starter - ₹4,999</li>
-                <li>Standard - ₹9,999</li>
-                <li>Pro - ₹19,999</li>
+                <li>Starter - ₹9,999</li>
+                <li>Standard - ₹14,999</li>
+                <li>Pro - ₹24,999</li>
               </ul>
             </div>
             <div>

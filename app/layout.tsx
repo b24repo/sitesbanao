@@ -180,7 +180,7 @@ const jsonLd = {
           name: "How much does a website cost for a small business in India?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "At SitesBanao, professional websites for small businesses start at just ₹4,999 for a single-page site. Multi-page sites start at ₹9,999, and full-featured sites with booking/payment start at ₹19,999. All prices include mobile-responsive design, WhatsApp integration, and Google Maps.",
+            text: "At SitesBanao, professional websites for small businesses start at just ₹9,999 for a single-page site. Multi-page sites start at ₹14,999, and full-featured sites with booking/payment start at ₹24,999. All prices include mobile-responsive design, WhatsApp integration, and Google Maps.",
           },
         },
         {

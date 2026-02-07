@@ -7,7 +7,7 @@ const jsonLd = {
   telephone: "+91-82099-04262",
   areaServed: { "@type": "City", name: "Jaipur", containedInPlace: { "@type": "State", name: "Rajasthan" } },
   address: { "@type": "PostalAddress", addressLocality: "Jaipur", addressRegion: "Rajasthan", addressCountry: "IN" },
-  priceRange: "₹4,999 - ₹19,999",
+  priceRange: "₹9,999 - ₹24,999",
 };
 
 export default function JaipurLayout({ children }: { children: React.ReactNode }) {
