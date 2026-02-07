@@ -295,6 +295,7 @@ export default function Home() {
               { name: "Shyam Darbaar", category: "Restaurant & Banquet", city: "Jaipur", url: "https://shyamdarbaar.sitesbanao.com", img: "/portfolio/shyam-darbaar.png", reviews: "4.4★ · 400+ reviews" },
               { name: "Jharokha Restro", category: "Restaurant", city: "Jaipur", url: "https://jharokharestro.sitesbanao.com", img: "/portfolio/jharokha-restro.png", reviews: "4.2★ · 250+ reviews" },
               { name: "Bake Affaire", category: "Café & Bakery", city: "Indore", url: "https://bake-affaire.vercel.app", img: "/portfolio/bake-affaire.png", reviews: "4.7★ · 960+ reviews" },
+              { name: "Whisk & Knead Co", category: "Bakery & Café", city: "Jaipur", url: "https://whiskandknead.sitesbanao.com", img: "/portfolio/whisk-and-knead.png", reviews: "New" },
             ].map((item, i) => (
               <div key={i} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
                 <div className="aspect-video overflow-hidden relative">
