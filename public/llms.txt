@@ -1,0 +1,61 @@
+# SitesBanao - Website Design Agency for Indian Businesses
+
+## About
+SitesBanao is an affordable website design agency serving small and local businesses across India. Founded by Virendra Vaishnav in 2025, we specialize in building professional, mobile-friendly websites for restaurants, salons, clinics, pet stores, gyms, hotels, and other local businesses.
+
+## Services
+- Professional Website Design & Development
+- Mobile-Responsive Design (Mobile-First)
+- Google Maps Integration
+- WhatsApp Business Integration
+- SEO Optimization
+- Custom Domain Setup
+- Fast Hosting on Vercel CDN
+- Menu/Services Pages
+- Photo Gallery
+- Contact Forms
+- Booking Systems (Pro plan)
+
+## Pricing
+- Basic Plan: ₹9,999 — Single-page professional website with WhatsApp, Google Maps, mobile responsive
+- Standard Plan: ₹14,999 — Multi-page website with contact forms, SEO, social media integration
+- Pro Plan: ₹19,999 — Full-featured website with booking system, payment integration, admin dashboard
+
+## Stats
+- 1,334+ leads generated across 4 cities
+- 100+ demo websites built
+- Cities served: Jaipur (265 leads), Jodhpur (498 leads), Udaipur (51 leads), Indore (520 leads)
+- Delivery time: 7 days (most sites ready in 24-48 hours)
+
+## Cities & Areas Served
+- Jaipur: C-Scheme, Malviya Nagar, Vaishali Nagar, Mansarovar, Tonk Road
+- Jodhpur: Sardarpura, Paota, Shastri Nagar, Ratanada, Chopasni Road
+- Udaipur: Fateh Sagar, Hathi Pol, Sukhadia Circle, Chetak Circle
+- Indore: Vijay Nagar, Palasia, Sapna Sangeeta, AB Road, South Tukoganj
+
+## Business Types We Serve
+Restaurants, Cafés, Bakeries, Salons, Pet Stores, Hotels, Guest Houses, Clinics, Gyms, Coaching Centers, Boutiques, Jewellery Shops, Wedding Venues, Handicraft Shops
+
+## Team
+- Virendra Vaishnav — Founder
+- Sachin — Sales Lead
+
+## Contact
+- Website: https://sitesbanao.com
+- WhatsApp: +91 82099 04262
+- CRM: https://sitesbanao-crm.vercel.app
+
+## Demo Sites (Sample)
+- https://donoraquarists.sitesbanao.com (Aquarium & Pet Store, Jaipur)
+- https://thedogfather.sitesbanao.com (Pet Store & Grooming, Jaipur)
+- https://evershinekerala.sitesbanao.com (Restaurant, Jaipur)
+- https://cafe-laalten.sitesbanao.com (Art Cafe, Jodhpur)
+- https://jhankar-haveli.sitesbanao.com (Heritage Hotel, Jodhpur)
+- https://savage-garden.sitesbanao.com (Restaurant, Udaipur)
+- https://bake-affaire.vercel.app (Café & Bakery, Indore)
+
+## Languages
+Hindi, English (Bilingual support)
+
+## Technology
+Next.js, React, Tailwind CSS, Vercel, TypeScript
