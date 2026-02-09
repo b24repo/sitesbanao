@@ -159,7 +159,13 @@ export default function IndorePage() {
           <div className="flex justify-center gap-4 mt-4 text-sm text-gray-500">
             <a href="/jaipur" className="hover:text-blue-400">Jaipur</a>
             <span>·</span>
+            <a href="/jodhpur" className="hover:text-blue-400">Jodhpur</a>
+            <span>·</span>
+            <a href="/udaipur" className="hover:text-blue-400">Udaipur</a>
+            <span>·</span>
             <a href="/indore" className="text-white hover:text-blue-400">Indore</a>
+            <span>·</span>
+            <a href="/blog" className="hover:text-blue-400">Blog</a>
           </div>
         </div>
       </footer>

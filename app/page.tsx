@@ -16,6 +16,8 @@ export default function Home() {
             <a href="#portfolio" className="hover:text-blue-600 transition">Portfolio</a>
             <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
             <a href="/jaipur" className="hover:text-blue-600 transition">Jaipur</a>
+            <a href="/jodhpur" className="hover:text-blue-600 transition">Jodhpur</a>
+            <a href="/udaipur" className="hover:text-blue-600 transition">Udaipur</a>
             <a href="/indore" className="hover:text-blue-600 transition">Indore</a>
           </nav>
           <a
@@ -418,7 +420,10 @@ export default function Home() {
               <h4 className="font-bold mb-4">Cities</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><a href="/jaipur" className="hover:text-white transition">Jaipur</a></li>
+                <li><a href="/jodhpur" className="hover:text-white transition">Jodhpur</a></li>
+                <li><a href="/udaipur" className="hover:text-white transition">Udaipur</a></li>
                 <li><a href="/indore" className="hover:text-white transition">Indore</a></li>
+                <li><a href="/blog" className="hover:text-white transition">Blog</a></li>
               </ul>
             </div>
             <div>

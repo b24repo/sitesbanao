@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Website Design in Jaipur | Professional Websites Starting ₹9,999 | SitesBanao",
+  title: "Website Design in Jaipur | ₹9,999 Se Shuru | Website Banao Jaipur | SitesBanao",
   description:
-    "Get a professional website for your Jaipur business starting ₹9,999. We serve businesses in C-Scheme, Malviya Nagar, Vaishali Nagar, Mansarovar, Tonk Road. 7-day delivery, mobile-friendly, SEO-ready.",
+    "Jaipur mein professional website banwao sirf ₹9,999 se. Dukaan ka website, restaurant website, salon website — 7 din mein ready. C-Scheme, Malviya Nagar, Vaishali Nagar, Mansarovar, Tonk Road.",
   keywords:
-    "website design Jaipur, web development Jaipur, affordable website Jaipur, business website Jaipur, Jaipur web designer, C-Scheme, Malviya Nagar, Vaishali Nagar, Mansarovar, Tonk Road, sitesbanao",
+    "website design Jaipur, web development Jaipur, affordable website Jaipur, business website Jaipur, Jaipur web designer, website banao jaipur, jaipur mein website banwao, dukaan ka website, sasta website jaipur, website banane wala jaipur, C-Scheme, Malviya Nagar, Vaishali Nagar, Mansarovar, Tonk Road, sitesbanao",
   alternates: { canonical: "https://sitesbanao.com/jaipur" },
   openGraph: {
-    title: "Website Design in Jaipur | Starting ₹9,999 | SitesBanao",
+    title: "Website Design in Jaipur | ₹9,999 Se Shuru | SitesBanao",
     description:
-      "Professional websites for Jaipur businesses. 7-day delivery. See our live demo sites!",
+      "Jaipur mein apni dukaan ka website banwao. ₹9,999 se shuru, 7 din mein ready. Live demo sites dekhein!",
     url: "https://sitesbanao.com/jaipur",
   },
 };
@@ -24,9 +25,43 @@ const demoSites = [
   { name: "Whisk & Knead Co", type: "Bakery & Café", url: "https://whiskandknead.sitesbanao.com", img: "/portfolio/whisk-and-knead.png", reviews: "New" },
 ];
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "SitesBanao - Jaipur",
+  "description": "Affordable website design for local businesses in Jaipur. Starting at ₹9,999.",
+  "url": "https://sitesbanao.com/jaipur/",
+  "telephone": "+918209904262",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "addressCountry": "IN"
+  },
+  "priceRange": "₹9,999 - ₹19,999",
+  "areaServed": { "@type": "City", "name": "Jaipur" },
+  "serviceType": ["Website Design", "Web Development", "Business Website"],
+  "parentOrganization": { "@type": "Organization", "name": "SitesBanao", "url": "https://sitesbanao.com" }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Jaipur mein website banwane ka kharcha kitna hai?", "acceptedAnswer": { "@type": "Answer", "text": "SitesBanao mein Jaipur ke businesses ke liye website ₹9,999 se shuru hoti hai. Yeh price mein design, hosting, mobile optimization, aur custom domain sab included hai." } },
+    { "@type": "Question", "name": "How long does it take to build a website for my Jaipur business?", "acceptedAnswer": { "@type": "Answer", "text": "Most websites are ready within 24-48 hours. We already have demo sites prepared for restaurants, salons, and shops in Jaipur that can be customized quickly." } },
+    { "@type": "Question", "name": "Kya website se sach mein customers aayenge?", "acceptedAnswer": { "@type": "Answer", "text": "Haan! Google pe 88% log local business search karte hain. Website hone se aapki dukaan Google Maps aur Search mein dikhti hai, jisse naye customers aate hain." } },
+    { "@type": "Question", "name": "Website mein kya kya milega?", "acceptedAnswer": { "@type": "Answer", "text": "Aapko milega: professional design, mobile-friendly layout, Google Maps integration, WhatsApp button, photo gallery, menu/services page, contact form, aur free hosting with domain." } },
+    { "@type": "Question", "name": "Kya baad mein changes kar sakte hain website mein?", "acceptedAnswer": { "@type": "Answer", "text": "Haan bilkul! Hum unlimited minor changes free mein karte hain. Menu update, photos change, timing update — sab WhatsApp pe batao, hum kar denge." } },
+    { "@type": "Question", "name": "Mere paas technical knowledge nahi hai, kya phir bhi website ban sakti hai?", "acceptedAnswer": { "@type": "Answer", "text": "Bilkul! Aapko kuch nahi karna. Bas apni photos, menu/services list, aur contact details WhatsApp pe bhejo — baaki sab hum karenge. 7 din mein website ready!" } }
+  ]
+};
+
 export default function JaipurPage() {
   return (
     <div className="min-h-screen bg-white">
+      <Script id="local-business-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Header */}
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur z-50 border-b border-gray-100">
@@ -58,12 +93,15 @@ export default function JaipurPage() {
               Professional Websites Starting ₹9,999
             </span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-4">
             We build beautiful, mobile-friendly websites for businesses across Jaipur — from C-Scheme
             to Malviya Nagar, Vaishali Nagar, Mansarovar, and Tonk Road.
           </p>
+          <p className="text-lg font-medium text-pink-600 mb-4">
+            🇮🇳 Apni dukaan ka website banwao — 7 din mein ready!
+          </p>
           <p className="text-gray-500 mb-10">
-            Whether you run a restaurant, pet store, salon, or clinic — get online in just 7 days.
+            Restaurant ho ya salon, pet store ho ya clinic — ₹9,999 mein professional website pao.
           </p>
           <a
             href="https://wa.me/918209904262?text=Hi!%20I%20need%20a%20website%20for%20my%20Jaipur%20business"
@@ -142,6 +180,31 @@ export default function JaipurPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+            Aksar Poochhe Jaane Wale Sawaal (FAQ)
+          </h2>
+          <p className="text-gray-600 text-center mb-12">Jaipur website design ke baare mein common questions</p>
+          <div className="space-y-6">
+            {[
+              { q: "Jaipur mein website banwane ka kharcha kitna hai?", a: "SitesBanao mein Jaipur ke businesses ke liye website ₹9,999 se shuru hoti hai. Yeh price mein design, hosting, mobile optimization, aur custom domain sab included hai." },
+              { q: "Website kitne din mein ready hoti hai?", a: "Most websites 24-48 hours mein ready ho jaati hain. Humne Jaipur ke restaurants, salons, aur shops ke liye demo sites pehle se tayyar rakhi hain jo jaldi customize ho jaati hain." },
+              { q: "Kya website se sach mein customers aayenge?", a: "Haan! Google pe 88% log local business search karte hain. Website hone se aapki dukaan Google Maps aur Search mein dikhti hai, jisse naye customers aate hain." },
+              { q: "Website mein kya kya milega?", a: "Professional design, mobile-friendly layout, Google Maps integration, WhatsApp button, photo gallery, menu/services page, contact form, aur free hosting with domain — sab included hai." },
+              { q: "Kya baad mein changes kar sakte hain?", a: "Haan bilkul! Hum unlimited minor changes free mein karte hain. Menu update, photos change, timing update — sab WhatsApp pe batao, hum kar denge." },
+              { q: "Mere paas technical knowledge nahi hai, kya phir bhi website ban sakti hai?", a: "Bilkul! Aapko kuch nahi karna. Bas apni photos, menu/services list, aur contact details WhatsApp pe bhejo — baaki sab hum karenge. 7 din mein website ready!" },
+            ].map((faq, i) => (
+              <div key={i} className="bg-gray-50 rounded-2xl p-6">
+                <h3 className="font-bold text-gray-900 text-lg mb-2">❓ {faq.q}</h3>
+                <p className="text-gray-600">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -170,7 +233,13 @@ export default function JaipurPage() {
           <div className="flex justify-center gap-4 mt-4 text-sm text-gray-500">
             <a href="/jaipur" className="text-white hover:text-blue-400">Jaipur</a>
             <span>·</span>
+            <a href="/jodhpur" className="hover:text-blue-400">Jodhpur</a>
+            <span>·</span>
+            <a href="/udaipur" className="hover:text-blue-400">Udaipur</a>
+            <span>·</span>
             <a href="/indore" className="hover:text-blue-400">Indore</a>
+            <span>·</span>
+            <a href="/blog" className="hover:text-blue-400">Blog</a>
           </div>
         </div>
       </footer>
