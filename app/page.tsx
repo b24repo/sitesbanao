@@ -78,6 +78,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Stats */}
+      <section className="py-16 px-4 bg-white border-b border-gray-100">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {[
+            { number: "50+", label: "Websites Delivered" },
+            { number: "4.9★", label: "Client Rating" },
+            { number: "7 Days", label: "Avg. Delivery" },
+            { number: "₹4,999", label: "Starting Price" },
+          ].map((stat, i) => (
+            <div key={i}>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                {stat.number}
+              </div>
+              <div className="text-gray-500 text-sm mt-1">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Who We Help */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
@@ -276,6 +295,77 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                 <p className="text-gray-400">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+            <p className="text-gray-600">Real feedback from real business owners</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Rajesh Sharma",
+                business: "Sharma Sweets, Indore",
+                quote: "Humein laga tha website bahut mehnga padega, lekin SitesBanao ne sirf ₹9,999 mein professional website bana di. Ab customers Google se seedha order karte hain!",
+                stars: 5,
+              },
+              {
+                name: "Priya Patel",
+                business: "Glow Beauty Salon, Jaipur",
+                quote: "Within one week my salon had a beautiful website. Booking requests doubled in the first month. Best investment I made for my business.",
+                stars: 5,
+              },
+              {
+                name: "Dr. Anil Gupta",
+                business: "Gupta Dental Clinic, Jodhpur",
+                quote: "Professional team, fast delivery. My patients can now book appointments online. The WhatsApp integration is very convenient for follow-ups.",
+                stars: 5,
+              },
+            ].map((t, i) => (
+              <div key={i} className="bg-gray-50 rounded-3xl p-8 hover:shadow-lg transition">
+                <div className="text-yellow-400 text-lg mb-3">
+                  {"★".repeat(t.stars)}
+                </div>
+                <p className="text-gray-700 mb-6 italic">&ldquo;{t.quote}&rdquo;</p>
+                <div>
+                  <div className="font-bold text-gray-900">{t.name}</div>
+                  <div className="text-gray-500 text-sm">{t.business}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20 px-4 bg-blue-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why SitesBanao?</h2>
+            <p className="text-gray-600">What makes us different from others</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {[
+              { icon: "💰", title: "70% Cheaper Than Agencies", desc: "Traditional agencies charge ₹30,000-₹1,00,000. We deliver the same quality starting at ₹4,999." },
+              { icon: "⚡", title: "7-Day Delivery Guarantee", desc: "No endless back-and-forth. We deliver fast so you start getting customers sooner." },
+              { icon: "🤝", title: "WhatsApp-First Support", desc: "No tickets, no emails. Just message us on WhatsApp anytime. We reply within 2 hours." },
+              { icon: "📊", title: "Built for Google Rankings", desc: "Every site comes SEO-optimized with Google Business Profile setup so customers find you online." },
+              { icon: "🔄", title: "Unlimited Revisions", desc: "Not happy? We keep tweaking until you love it. Zero extra charges for design changes." },
+              { icon: "🇮🇳", title: "Made for Indian Businesses", desc: "We understand local businesses. Hindi + English support, UPI integration, WhatsApp booking." },
+            ].map((item, i) => (
+              <div key={i} className="flex gap-4 bg-white rounded-2xl p-6 shadow-sm">
+                <div className="text-3xl">{item.icon}</div>
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
+                  <p className="text-gray-600 text-sm">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
